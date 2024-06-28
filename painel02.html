@@ -1,0 +1,253 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tela de solicitação de senha</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #353358;
+    }
+
+    #segunda-linha {
+      background-color: #82c4ed;
+      font-size: 30px;
+      text-transform: uppercase;
+    }
+
+    #col-icone-temperatura {
+      color: #fff;
+      font-size: 65px;
+    }
+
+    #informacao-data {
+      color: #fff;
+      font-size: 35px;
+      border-left: #fff 1px solid;
+    }
+
+    #informacao-data .row {
+      justify-content: center;
+    }
+
+    #col-cidade {
+      color: #fff;
+      font-size: 45px;
+    }
+
+    #col-cidade .cidade {
+      font-size: 15px !important;
+    }
+
+    .linha-informacoes {
+      padding: 5px;
+    }
+
+    .btn-balcao {
+      background-color: #3f6118;
+      color: #ffffff;
+    }
+
+    .btn-balcao:hover {
+      background-color: #353358;
+    }
+
+    .btn-tipo-atendimento {
+      background-color: #fff;
+      width: 200px;
+    }
+
+    .btn-senha {
+      background-color: #4177b6;
+      border: #fff 7px solid;
+      border-radius: 35px;
+    }
+
+    .btn-group {
+      height: 60px;
+      margin: 5px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .btn-group i {
+      width: auto;
+      ;
+    }
+
+    .btn-group2 {
+      height: 30px !important;
+      color: #fff !important;
+    }
+
+    .btn-group2 .btn {
+      color: #fff !important;
+    }
+
+    .container-fluid {
+      margin-top: 5px;
+    }
+  </style>
+
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">ATENDEFACIL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Cadastros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cadastro_operador.html">Cadastro de Atendende</a></li>
+            <li><a class="dropdown-item" href="cadastro_tipo_senha.html">Cadastro de Senhas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="cadastro_guiche.html">Cadastro de Guichês</a></li>
+          </ul>
+        </li>
+
+         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Relatórios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="relatorios_atendimeto.html">Relatórios de Atendende</a></li>
+            <li><a class="dropdown-item" href="sistema_senha.html">Relatórios de Senhas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Relatórios de Guichês</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Configurações
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Configurações de Atendende</a></li>
+            <li><a class="dropdown-item" href="#">Configurações de Senhas</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Configurações de Guichês</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Sair</a>
+        </li>
+
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/natureza.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/natureza2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/natureza3.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row linha-informacoes">
+          <div class="col" id="col-cidade">
+            <div class="row cidade">Brasilia</div>
+            <div class="row">28º</div>
+          </div>
+          <div class="col" id="col-icone-temperatura">
+            <i class="bi bi-cloud-sun-fill"></i>
+            <div class="col" id="informacao-data">
+              <div class="row">28/01/2023</div>
+              <div class="row">16:00:55</div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <div class="col-4">
+        <div class="row">
+        </div>
+        <img src="img/natureza2.jpeg" width="400px" />
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-balcao">Senha</button>
+          <button type="button" class="btn btn-primary btn-balcao">Atendimento </button>
+          <button type="button" class="btn btn-primary btn-balcao">Balção</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row">Atendimento ao Municipio</div>
+            <div class="row">Normal <i class="bi bi-person-vcard-fill"></i></div>
+          </button>
+          <button type="button" class="btn btn-primary btn-balcao">1</button>
+        </div>
+
+
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row">Atendimento ao Municipio</div>
+            <div class="row">Normal <i class="bi bi-person-vcard-fill"></i></div>
+          </button>
+          <button type="button" class="btn btn-primary btn-balcao">1</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row">Atendimento ao Municipio</div>
+            <div class="row">Prioritario <i class="bi bi-person-vcard-fill"></i></div>
+          </button>
+          <button type="button" class="btn btn-primary btn-balcao">2</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary btn-senha">A 023</button>
+          <button type="button" class="btn btn-tipo-atendimento">
+            <div class="row">Atendimento ao Municipio</div>
+            <div class="row">Prioritario <i class="bi bi-postcard-heart"></i></div>
+          </button>
+          <button type="button" class="btn btn-primary btn-balcao">2</button>
+        </div>
+      </div>
+      <div class="row" id="segunda-linha">
+        <marquee>Este texto vai "rolar" da direita para esquerda</marquee>
+
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
